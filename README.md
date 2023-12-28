@@ -25,4 +25,4 @@ https://github.com/<owner>/<reponme>
 1) https://github.com/kohsuke/winsw
 2) https://github.com/github/linguist
 
-<img width="361" alt="image" src="https://github.com/varsha-mkanmuri/github-open-issues/assets/124398391/f0bdd417-b6d0-4a52-a5fc-b020d9451f7e">
+<img width="600" alt="image" src="https://github.com/varsha-mkanmuri/github-open-issues/assets/124398391/f0bdd417-b6d0-4a52-a5fc-b020d9451f7e">
