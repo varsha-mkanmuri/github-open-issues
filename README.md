@@ -23,4 +23,10 @@ https://github.com/<owner>/<reponme>
   
  Sample input: https://github.com/github/linguist
 
-<img width="900" alt="image" src="https://github.com/varsha-mkanmuri/github-open-issues/assets/124398391/f0bdd417-b6d0-4a52-a5fc-b020d9451f7e">
+
+![image](https://github.com/varsha-mkanmuri/github-open-issues/assets/124398391/b2a11e4e-1be0-4510-896c-26d122954f66)
+![image](https://github.com/varsha-mkanmuri/github-open-issues/assets/124398391/81ae9cd9-3953-4d32-bc4e-31dfbd4acaad)
+
+
+
+
