@@ -1,0 +1,43 @@
+<div *ngIf="inputScreen">
+  <div style="text-align:center" id="inputPage">
+    <h4>
+      Please enter the public repo link in https://github.com/[owner_name]>/[repo_name] format
+    </h4>
+    <input [(ngModel)]="inputURL" placeholder="repolink"><br>
+    <button (click)="getRequestParams()">Fetch Open Issues</button>
+  </div>
+</div>
+<div *ngIf="outputScreen">
+  
+    <div style="text-align:center" id="outputPage">
+      <h1>
+        <p style="text-align:center">Here are the open issues counts</p>
+      </h1>
+      <table style="width:100%" border="1">
+          <tr>
+            <th style="text-align:center">Issues</th>
+            <th style="text-align:center">IssuesCount</th>
+          </tr>
+          <tr>
+            <td>Total open issues</td>
+            <td>{{userInfo.issueCount[0]}}</td>
+          </tr>
+          <tr>
+            <td>Open issues in last 24hrs</td>
+            <td>{{userInfo.issueCount[1]}}</td>
+          </tr>
+          <tr>
+            <td>Open issues in past 7 days</td>
+            <td>{{userInfo.issueCount[2]}}</td>
+            </tr>
+            <tr>
+              <td>Open issues beyond 7days</td>
+              <td>{{userInfo.issueCount[3]}}</td>
+            </tr>
+        </table>
+      <button (click)="goBack()">Go back</button>
+    </div>
+
+
+
+</div>
