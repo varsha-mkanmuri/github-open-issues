@@ -20,8 +20,7 @@ INSTRUCTIONS:
 Please enter the input in following format :
 https://github.com/<owner>/<reponme>\
 Kindly note that the reponame should be a plain string without special characters and hyphen, which will be worked as an improvement in the next step.
-  
- Sample input: https://github.com/github/linguist
+Sample input: https://github.com/github/linguist
 
 ![image](https://github.com/varsha-mkanmuri/github-open-issues/assets/124398391/4c6785a1-32ff-4651-b361-95e37be6a38c)
 ![image](https://github.com/varsha-mkanmuri/github-open-issues/assets/124398391/b2a11e4e-1be0-4510-896c-26d122954f66)
