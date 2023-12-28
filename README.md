@@ -21,8 +21,6 @@ Please enter the input in following format :
 https://github.com/<owner>/<reponme>
 *Kindly note that the reponame should be a plain string without special characters and hyphen, which will be worked as an improvement in the next step.
   
- Sample inputs:
-1) https://github.com/kohsuke/winsw
-2) https://github.com/github/linguist
+ Sample input: https://github.com/github/linguist
 
-<img width="600" alt="image" src="https://github.com/varsha-mkanmuri/github-open-issues/assets/124398391/f0bdd417-b6d0-4a52-a5fc-b020d9451f7e">
+<img width="900" alt="image" src="https://github.com/varsha-mkanmuri/github-open-issues/assets/124398391/f0bdd417-b6d0-4a52-a5fc-b020d9451f7e">
