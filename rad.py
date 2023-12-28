@@ -6,7 +6,7 @@ from flask_cors import CORS,cross_origin
 app = Flask(__name__)
 CORS(app)
 
-headers = {"Authorization": "Bearer 15bae2f95d72a9039a165a4fcb9c89bfb51416ed"}
+headers = {"Authorization": "Bearer <>"}
 
 query2 = """
 
@@ -32,8 +32,6 @@ query3 = """
 
 """
 
-
-
 issueCounts = [0,0,0,0]
 
 #dummy values
@@ -47,7 +45,7 @@ reponame = ""
 
 @cross_origin()
 @app.route("/issues")
-#@cross_origin(supports_credentials=True)
+@cross_origin(supports_credentials=True)
 def index():
 	owner = request.args['owner']
 	reponame = request.args['reponame']
@@ -146,23 +144,14 @@ def index():
 
     #find_issues() 
     return str(issueCounts)
-    #return "hey"
-
-
-
-
+    
 
 @app.route("/findissues")
 def find_issues():
 
-
-
-	#http://127.0.0.1:5000/issues?owner=octocat&reponame=Hello-World
-
+    #http://127.0.0.1:5000/issues?owner=octocat&reponame=Hello-World
     #request = requests.post('https://api.github.com/graphql', json={'query': query2}, headers=headers)  works fine
-    request = requests.post('https://api.github.com/graphql', json={'query': query3}, headers=headers)
-
-    
+    request = requests.post('https://api.github.com/graphql', json={'query': query3}, headers=headers)    
 
     if request.status_code == 200:
     	result = request.json()
@@ -171,91 +160,5 @@ def find_issues():
     	raise Exception("Query failed to run by returning code of {}. {}".format(request.status_code, query))
 
 
-
-
-
 if __name__ == "__main__":
 	app.run(debug=True)
-
-
-
-
-
-
-
-"""
-
-# An example to get the remaining rate limit using the Github GraphQL API.'''
-
-
-
-#import requests
-
-
-
-
-
-
-
-
-
-'''def run_query(query): # A simple function to use requests.post to make the API call. Note the json= section.
-
-    request = requests.post('https://api.github.com/graphql', json={'query': query}, headers=headers)
-
-    if request.status_code == 200:
-
-        return request.json()
-
-    else:
-
-        raise Exception("Query failed to run by returning code of {}. {}".format(request.status_code, query))
-
-
-
-        
-@app.route("/repo")
-def run_query():
-
-	request = requests.post('https://api.github.com/graphql', json={'query': query}, headers=headers)
-
-	if request.status_code == 200:
-		result = request.json()
-		return str(result["data"]["rateLimit"]["remaining"])
-	else:
-		raise Exception("Query failed to run by returning code of {}. {}".format(request.status_code, query))
-# The GraphQL query (with a few aditional bits included) itself defined as a multi-line string.       
-
-query = """
-
-'''{
-
-  viewer {
-
-    login
-
-  }
-
-  rateLimit {
-
-    limit
-
-    cost
-
-    remaining
-
-    resetAt
-
-  }
-
-}
-
-"""
-
-
-
-result = run_query(query) # Execute the query
-
-remaining_rate_limit = result["data"]["rateLimit"]["remaining"] # Drill down the dictionary
-
-print("Remaining rate limit - {}".format(remaining_rate_limit))'''
