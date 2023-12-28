@@ -18,8 +18,8 @@ Steps to run the application:
 INSTRUCTIONS:
 
 Please enter the input in following format :
-https://github.com/<owner>/<reponme>
-*Kindly note that the reponame should be a plain string without special characters and hyphen, which will be worked as an improvement in the next step.
+https://github.com/<owner>/<reponme>\
+Kindly note that the reponame should be a plain string without special characters and hyphen, which will be worked as an improvement in the next step.
   
  Sample input: https://github.com/github/linguist
 
